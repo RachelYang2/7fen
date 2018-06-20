@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>七分教育</title>
+<link rel="shortcut icon" href="7studying.ico">
+<!--mobile apps-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--mobile apps-->
+<!--Custom Theme files -->
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/style.css?v=0319" type="text/css" rel="stylesheet" media="all">
+<!-- //Custom Theme files -->
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script> 
+<!-- //js -->
+
+<!--animate-->
+<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+<script src="js/wow.min.js"></script>
+	<script>
+		 new WOW().init();
+	</script>
+<!--//end-animate-->
+<!-- start-smoth-scrolling-->
+<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+		
+		$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+</script>
+<!--//end-smoth-scrolling-->
+</head>
+<body>
+	<!--navigation-->
+	<div class="top-nav wow" style="height: 4.5em;">
+			<div class="container">
+				<div class="navbar-header logo">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						Menu
+					</button>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<div class="menu">
+						<ul class="nav navbar">
+							<li class="menu-item menu-item-current"><a href="#home" class="menu-link scroll">首页</a></li>
+							<li class="menu-item"><a href="#work" class="menu-link scroll">校区简介</a></li>
+							<li class="menu-item"><a href="#t-s" class="menu-link scroll">师生风采</a></li>
+							<li class="menu-item"><a href="#about" class="menu-link scroll">最新资讯</a></li>
+							<li class="menu-item"><a href="#contact" class="menu-link scroll">联系我们</a></li>
+						</ul>
+					</div>
+					<div class="clearfix"> </div>
+					<script src="js/classie.js"></script>
+					<script>
+						(function() {
+							[].slice.call(document.querySelectorAll('.menu')).forEach(function(menu) {
+								var menuItems = menu.querySelectorAll('.menu-link'),
+									setCurrent = function(ev) {
+										ev.preventDefault();
+										var item = ev.target.parentNode; // li
+										// return if already current
+										if( classie.has(item, 'menu-item-current') ) {
+											return false;
+										}
+										// remove current
+										classie.remove(menu.querySelector('.menu-item-current'), 'menu-item-current');
+										// set current
+										classie.add(item, 'menu-item-current');
+									};
+								
+								[].slice.call(menuItems).forEach(function(el) {
+									el.addEventListener('click', setCurrent);
+								});
+							});
+						})(window);
+					</script>
+				</div>
+				<!-- script-for sticky-nav -->
+				<script>
+				$(document).ready(function() {
+					 var navoffeset=$(".top-nav").offset().top;
+					 $(window).scroll(function(){
+						var scrollpos=$(window).scrollTop(); 
+						if(scrollpos >=navoffeset){
+							$(".top-nav").addClass("fixed");
+						}else{
+							$(".top-nav").removeClass("fixed");
+						}
+					 });
+					 
+				});
+				</script>
+				<!-- /script-for sticky-nav -->
+			</div>
+		</div>	
+	<!--banner-->
+	<div  id="home" class="banner">
+		<div class="banner-info">
+			<div class="banner-top">
+				<div class="container">
+					<div class="logo">
+						<img src="images/logo.png" class="logo-img" alt="七分教育"/>
+					</div>
+					<div class="word">
+						<img src="images/left.png" class="word-left" alt="三分天注定" />
+						<img src="images/right.png" class="word-right" alt="七分靠教育" />
+					</div>
+					<div class="wow slideInDown animated" data-wow-delay=".2s" style="text-align: center;font-size: 200%">
+						<p><span class="glyphicon glyphicon-earphone"></span> 0573-8395 2805 </p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<a  class="logo" href="index.html"></a>
+			<!-- <div class="banner-text"> -->
+				<!-- <h1 class="wow slideInLeft animated" data-wow-delay=".2s"> -->
+					<!-- <a href="index.html">七分教育官网</a></h1> -->
+				<!-- <p class="wow slideInRight animated" data-wow-delay=".2s">北大·华师大硕士联合创办</p> -->
+			<!-- </div> -->
+			
+			<!--//navigation-->
+		</div>
+	</div>
+	<!--//banner-->
+	<!--about-->
+	<div class="slid">
+		<div class="container">
+			<h3 class="wow slideInDown animated" data-wow-delay=".2s">北大·华师大硕士联合创办</h3>
+			<p class="wow fadeInUp animated" data-wow-delay=".2s">嘉兴七分教育咨询有限公司由十多年教龄的北大毕业生钱兵和华师大软件工程硕士沈苗佳联合创立。
+			</br>多年来一直专注于初高中教育培训，开设各学科的一对一、一对多和精品小班课程，以及中加班、IB等国际课程的课外培训；近期增设书法、美术等艺术类兴趣课程，欢迎随时咨询。</p>
+		</div>
+	</div>
+	<!--//about-->
+
+	<!-- 校区简介 -->
+	<div class="welcome work" id="work">
+		<div class="container">
+			<div class="work-info">
+				<div class="col-md-3 work-grids work-grd1 wow slideInLeft animated" data-wow-delay=".2s">
+					<h3 class="title w-sjz">校区简介</h3>
+					<ul>
+						<li><span class="glyphicon glyphicon-ok-circle"></span>一中校区地址：南湖区南湖纺工路赞成·学仕苑旁（嘉兴一中旁）；公交路线：1、8、10、28、56(夜班)、80(夜班)、88、95、162、171、211路，“嘉兴一中”站；咨询电话：0573-8395 2805； 183 5835 0528</li>
+						<li><span class="glyphicon glyphicon-ok-circle"></span>高中园校区地址：南湖区双溪路1871号高中园区对面梦创基地3楼C01；公交路线：8、82、82(夜班)、92路，“高中园区西”站；咨询电话：0573-8395 2805； 183 5835 0528</li>
+						<li><span class="glyphicon glyphicon-ok-circle"></span>余新分校地址：南湖区余新镇嘉余线茗品别墅；公交路线：游1(原211)、176、221路，“同创别墅”站；咨询电话：0573-8395 2806</li>						
+						<li><span class="glyphicon glyphicon-ok-circle"></span>嘉高校区地址：秀洲区嘉兴皇马公寓（洪殷路）；公交路线：---；咨询电话：0573-8395 2806</li>
+					</ul>
+				</div>
+				<div class="col-md-2 work-grids wow zoomIn animated campus" data-wow-delay=".2s" style="margin-left: 3em;">
+					<img src="images/c/yz-b.jpg" alt=""/>
+					<div class="img-caption">
+						<div class="img-text">
+							<h4>一中校区</h4>
+							<p></p>
+						</div>
+					</div>
+					<a href="#yizhong" class="b-animate-go wow zoomIn animated" data-wow-delay=".2s" data-toggle="modal">
+						<div class="b-wrapper">
+							<span class="b-animate b-from-left">
+								<img class="img-responsive" src="images/e.png" alt=""/>
+							</span>					
+						</div>
+					</a>
+				</div>
+				<!-- go to 一中校区 -->
+				<div class="portfolio-modal modal fade" id="yizhong" tabindex="-1" aria-hidden="true">
+					<div class="modal-content">
+						<div class="close-modal" data-dismiss="modal">
+							<div class="lr">
+								<div class="rl"></div>
+							</div>
+						</div>
+						<div class="portfolio-container">
+							<div class="row">
+								<div class="col-lg-8 col-lg-offset-2">
+									<div class="modal-body">
+										<h3>一中校区</h3>
+										<hr>
+										<p>一中校区：南湖区南湖纺工路赞成·学仕苑旁（嘉兴一中旁）</br>
+</br>
+咨询电话：0573-8395 2805； 183 5835 0528</br>
+咨询微信：沈老师(见底部二维码)</p>
+										<div class="gallery-grids-top">
+												<img src="images/yz/yz1.jpg" class="img-responsive" alt=""/>
+										</div>
+										<div class="gallery-grids-top">
+												<img src="images/yizhong_loc.jpg" class="img-responsive" alt=""/>
+										</div>
+										<div class="gallery-grids-top">
+												<img src="images/yz/weichat-smj.jpg" class="img-responsive" alt=""/>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-2 work-grids wow zoomIn animated campus" data-wow-delay=".2s">
+					<img src="images/c/gzy-b.jpg" alt=""/>
+					<div class="img-caption">
+						<div class="img-text">
+							<h4>高中园校区</h4>
+							<p></p>
+						</div>
+					</div>
+					<a href="#gaozhongyuan" class="b-animate-go wow zoomIn animated" data-wow-delay=".2s" data-toggle="modal">					
+						<div class="b-wrapper">
+							<span class="b-animate b-from-left">
+								<img class="img-responsive" src="images/e.png" alt=""/>
+							</span>					
+						</div>
+					</a>
+				</div>
+
+				<!-- go to 高中园校区 -->
+				<div class="portfolio-modal modal fade" id="gaozhongyuan" tabindex="-1" aria-hidden="true">
+					<div class="modal-content">
+						<div class="close-modal" data-dismiss="modal">
+							<div class="lr">
+								<div class="rl"></div>
+							</div>
+						</div>
+						<div class="portfolio-container">
+							<div class="row">
+								<div class="col-lg-8 col-lg-offset-2">
+									<div class="modal-body">
+										<h3>高中园校区</h3>
+										<hr>
+										<p>高中园校区：南湖区双溪路1871号高中园区对面梦创基地3楼C01</br></br>
+咨询电话：0573-8395 2805； 183 5835 0528</br>
+咨询微信：沈老师(见底部二维码)</p>
+										<div class="gallery-grids-top">
+												<img src="images/gzy/gzy1.jpg" class="img-responsive" alt=""/>
+										</div>
+										<div class="gallery-grids-top">
+												<img src="images/gzy_loc.jpg" class="img-responsive" alt=""/>
+										</div>
+										<div class="gallery-grids-top">
+												<img src="images/gzy/weichat-sls.jpg" class="img-responsive" alt=""/>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="portfolio-modal modal fade" id="yuxin" tabindex="-1" aria-hidden="true">
+					<div class="modal-content">
+						<div class="close-modal" data-dismiss="modal">
+							<div class="lr">
+								<div class="rl"></div>
+							</div>
+						</div>
+						<div class="portfolio-container">
+							<div class="row">
+								<div class="col-lg-8 col-lg-offset-2">
+									<div class="modal-body">
+										<h3>余新校区</h3>
+										<hr>
+										<p>余新校区：南湖区余新镇嘉余线茗品别墅</br></br>
+咨询电话：0573-8395 2805； 183 5835 0528</br>
+咨询微信：沈老师(见底部二维码)</p>
+										<div class="gallery-grids-top">
+												<img src="images/yx/yx1.jpg" class="img-responsive" alt=""/>
+										</div>
+										<div class="gallery-grids-top">
+												<img src="images/yuxin_loc.jpg" class="img-responsive" alt=""/>
+										</div>
+										<div class="gallery-grids-top">
+												<img src="images/yx/weichat-a.jpg" class="img-responsive" alt=""/>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="portfolio-modal modal fade" id="jiagao" tabindex="-1" aria-hidden="true">
+					<div class="modal-content">
+						<div class="close-modal" data-dismiss="modal">
+							<div class="lr">
+								<div class="rl"></div>
+							</div>
+						</div>
+						<div class="portfolio-container">
+							<div class="row">
+								<div class="col-lg-8 col-lg-offset-2">
+									<div class="modal-body">
+										<h3>嘉高校区</h3>
+										<hr>
+										<p>嘉高校区：秀洲区嘉兴皇马公寓（洪殷路）</br></br>
+咨询电话：0573-8395 2805； 183 5835 0528</br>
+咨询微信：沈老师(见底部二维码)</p>
+										<div class="gallery-grids-top">
+												<img src="images/jiagao.jpg" class="img-responsive" alt=""/>
+										</div>
+										<div class="gallery-grids-top">
+												<img src="images/jiagao_loc.jpg" class="img-responsive" alt=""/>
+										</div>
+										<div class="gallery-grids-top">
+												<img src="images/gzy/weichat-sls.jpg" class="img-responsive" alt=""/>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-2 work-grids wow zoomIn animated campus" data-wow-delay=".2s">
+					<img src="images/c/yx-b.jpg" alt=""/>
+					<div class="img-caption">
+						<div class="img-text">
+							<h4>余新校区</h4>
+							<p></p>
+						</div>
+					</div>
+					<a href="#yuxin" class="b-animate-go wow zoomIn animated" data-wow-delay=".2s" data-toggle="modal">	
+						<div class="b-wrapper">
+							<span class="b-animate b-from-left">
+								<img class="img-responsive" src="images/e.png" alt=""/>
+							</span>					
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-2 work-grids wow zoomIn animated campus" data-wow-delay=".2s">
+					<img src="images/jiagao.jpg" alt=""/>
+					<div class="img-caption">
+						<div class="img-text">
+							<h4>嘉高校区</h4>
+							<p></p>
+						</div>
+					</div>
+					<a href="#jiagao" class="b-animate-go wow zoomIn animated" data-wow-delay=".2s" data-toggle="modal">	
+						<div class="b-wrapper">
+							<span class="b-animate b-from-left">
+								<img class="img-responsive" src="images/e.png" alt=""/>
+							</span>					
+						</div>
+					</a>
+				</div>
+
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- ／／校区简介 -->
+
+	<!--师生风采-->
+	<div id="t-s" class="welcome gallery">
+		<div class="container">
+			<h3 class="title">师生风采</h3>
+			<div class="gallery-info">
+				<div class="col-md-6 gallery-grids glry-grid1">
+					<div class="gallery-grids-top">
+						<a href="#portfolioModal1" class="b-link-stripe b-animate-go wow zoomIn animated" data-wow-delay=".2s" data-toggle="modal">
+							<img src="images/study/1-4.jpg" class="img-responsive" alt=""/>
+							<div class="b-wrapper">
+								<span class="b-animate b-from-left">
+									<img class="img-responsive" src="images/e.png" alt=""/>
+								</span>					
+							</div>
+						</a>
+					</div>
+					<div class="gallery-grids-top">
+						<div class="col-md-6 bottom-grids">
+							<a href="#portfolioModal2" class="b-link-stripe b-animate-go wow zoomIn animated" data-wow-delay=".2s" data-toggle="modal">
+								<img src="images/study/1-2-1.jpg" class="img-responsive" alt=""/>
+								<div class="b-wrapper">
+									<span class="b-animate b-from-left">
+										<img class="img-responsive" src="images/e.png" alt=""/>
+									</span>					
+								</div>
+							</a>
+						</div>
+						<div class="col-md-6 bottom-grids ">
+							<a href="#portfolioModal3" class="b-link-stripe b-animate-go wow zoomIn animated" data-wow-delay=".2s" data-toggle="modal">
+								<img src="images/study/1-2-2.jpg" class="img-responsive" alt=""/>
+								<div class="b-wrapper">
+									<span class="b-animate b-from-left">
+										<img class="img-responsive" src="images/e.png" alt=""/>
+									</span>					
+								</div>
+							</a>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div class="col-md-6 gallery-grids glry-grid1">
+					<div class="gallery-grids-top">
+						<div class="col-md-6 bottom-grids2 ">
+							<a href="#portfolioModal4" class="b-link-stripe b-animate-go wow zoomIn animated" data-wow-delay=".2s" data-toggle="modal">
+								<img src="images/activity/t-cai.jpg" class="img-responsive" alt=""/>
+								<div class="b-wrapper">
+									<span class="b-animate b-from-left">
+										<img class="img-responsive" src="images/e.png" alt=""/>
+									</span>					
+								</div>
+							</a>
+						</div>
+						<div class="col-md-6 bottom-grids2 ">
+							<a href="#portfolioModal5" class="b-link-stripe b-animate-go wow zoomIn animated" data-wow-delay=".2s" data-toggle="modal">
+								<img src="images/activity/yang-0.jpg" class="img-responsive" alt=""/>
+								<div class="b-wrapper">
+									<span class="b-animate b-from-left">
+										<img class="img-responsive" src="images/e.png" alt=""/>
+									</span>					
+								</div>
+							</a>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="gallery-grids-top ">
+						<a href="#portfolioModal6" class="b-link-stripe b-animate-go wow zoomIn animated" data-wow-delay=".2s" data-toggle="modal">
+							<img src="images/activity/all.jpg" class="img-responsive" alt=""/>
+							<div class="b-wrapper">
+								<span class="b-animate b-from-left">
+									<img class="img-responsive" src="images/e.png" alt=""/>
+								</span>					
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+				<!-- gallery Modals -->
+				<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-hidden="true">
+					<div class="modal-content">
+						<div class="close-modal" data-dismiss="modal">
+							<div class="lr">
+								<div class="rl"></div>
+							</div>
+						</div>
+						<div class="portfolio-container">
+							<div class="row">
+								<div class="col-lg-8 col-lg-offset-2">
+									<div class="modal-body">
+										<h3>图片展示</h3>
+										<hr>
+										<img src="images/study/1-4.jpg" class="img-responsive img-centered" alt="">
+										<p>请给配图一句话</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-hidden="true">
+					<div class="modal-content">
+						<div class="close-modal" data-dismiss="modal">
+							<div class="lr">
+								<div class="rl"></div>
+							</div>
+						</div>
+						<div class="portfolio-container">
+							<div class="row">
+								<div class="col-lg-8 col-lg-offset-2">
+									<div class="modal-body">
+										<h3>图片展示</h3>
+										<hr>
+										<img src="images/study/1-2-1.jpg" class="img-responsive img-centered" alt="">
+										<p>请给配图一句话</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-hidden="true">
+					<div class="modal-content">
+						<div class="close-modal" data-dismiss="modal">
+							<div class="lr">
+								<div class="rl"></div>
+							</div>
+						</div>
+						<div class="portfolio-container">
+							<div class="row">
+								<div class="col-lg-8 col-lg-offset-2">
+									<div class="modal-body">
+										<h3>图片展示</h3>
+										<hr>
+										<img src="images/study/1-2-2.jpg" class="img-responsive img-centered" alt="">
+										<p>请给配图一句话</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-hidden="true">
+					<div class="modal-content">
+						<div class="close-modal" data-dismiss="modal">
+							<div class="lr">
+								<div class="rl"></div>
+							</div>
+						</div>
+						<div class="portfolio-container">
+							<div class="row">
+								<div class="col-lg-8 col-lg-offset-2">
+									<div class="modal-body">
+										<h3>图片展示</h3>
+										<hr>
+										<img src="images/activity/t-cai.jpg" class="img-responsive img-centered" alt="">
+										<p>请给配图一句话</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-hidden="true">
+					<div class="modal-content">
+						<div class="close-modal" data-dismiss="modal">
+							<div class="lr">
+								<div class="rl"></div>
+							</div>
+						</div>
+						<div class="portfolio-container">
+							<div class="row">
+								<div class="col-lg-8 col-lg-offset-2">
+									<div class="modal-body">
+										<h3>图片展示</h3>
+										<hr>
+										<img src="images/activity/yang-0.jpg" class="img-responsive img-centered" alt="">
+										<p>请给配图一句话</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-hidden="true">
+					<div class="modal-content">
+						<div class="close-modal" data-dismiss="modal">
+							<div class="lr">
+								<div class="rl"></div>
+							</div>
+						</div>
+						<div class="portfolio-container">
+							<div class="row">
+								<div class="col-lg-8 col-lg-offset-2">
+									<div class="modal-body">
+										<h3>图片展示</h3>
+										<hr>
+										<img src="images/activity/all.jpg" class="img-responsive img-centered" alt="">
+										<p>请给配图一句话</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--//gallery Modals -->
+			</div>
+		</div>
+	</div>
+	<!--//gallery-->
+
+	<!-- 最新资讯 -->
+	<div class="welcome footer" id="about">
+		<div class="container">
+			<h2 class="title wow slideInDown animated" data-wow-delay=".2s">最新资讯</h2>
+			<div class="col-md-4 footer-grids sjz fadeInLeft animated" data-wow-delay=".2s">
+				<h4><a href="http://www.jxgjzx.net.cn/NewsView.aspx?id=1930" target="_black">七分教育教学总监钱兵参加嘉高徐校长主持的校友座谈会</a></h4>
+				<p>庆祝嘉高建校十八周年校友座谈会，七分教育教学总监钱兵参加嘉高徐校长主持的校友座谈会</p>
+			</div>
+			<div class="col-md-4 footer-grids sjz fadeInLeft animated" data-wow-delay=".2s">
+				<h4><a href="http://mp.weixin.qq.com/s?__biz=MzA3NTM0NDE3OA==&mid=2651904995&idx=1&sn=6633c0bf22ccab4483eff18775417157&chksm=84958bbeb3e202a8b39c5847c4325aa63d71449beba7ca20ec99a8ee8d48e11aec07f1505f02&mpshare=1&scene=1&srcid=1129c1ouwaYoeGofzvjHTGEY#rd" target="_black">“三位一体”招生，你知道多少</a></h4>
+				<p>11月12日，由中国教育在线主办的“三位一体”综合评价招生公益讲座正式启动，首场走进德清求是高级中学，温州大学招办副主任王峰、浙江万里学院招办主任夏正方和浙江越秀外国语学院原学工部部长、学生处处长冯丽琴担任主讲嘉宾，为高三年级近千名学生及家长带来了“三位一体”招生的精彩解读，现在反响热烈</p>
+			</div>
+			<div class="col-md-4 footer-grids sjz fadeInLeft animated" data-wow-delay=".2s">
+				<h4><a href="http://mp.weixin.qq.com/s?__biz=MTg3NjM4NzEwMQ==&mid=2651989905&idx=1&sn=7fc48b526511b10e5ad7db1f69fb3d10&mpshare=1&scene=1&srcid=0825xz9LJHMTHsyErSXoVnB1#rd" target="_black">跟进浙江省文理不分科改革现状</a></h4>
+				<p>转眼浙江省的新高考改革即将进入第三个年头。最早的一批改革试验品将要升入高三，马上要面对高中阶段最后一次选考的激烈竞争。改革在浙江、上海两地试点之后，现在也有在全国推广的趋势。新高考改革带来的最大的变化是“文理不分科”，因为文理不分科的缘故，原有的高中教学秩序受到了极大的冲击。</p>
+			</div>
+			<div class="clearfix"> </div>
+			<div class="col-md-4 footer-grids sjz fadeInLeft animated" data-wow-delay=".2s">
+				<h4><a href="http://mp.weixin.qq.com/s?__biz=MzA3NTM0NDE3OA==&mid=2651904179&idx=1&sn=e1654ea29519f94a7a1b3b1af948588d&mpshare=1&scene=1&srcid=0828YoTENODlgl2IAXOOZlmf#rd" target="_black">新学考、选考最新的权威解答</a></h4>
+				<p>今年10月，我省将进行高中学考和高考选考科目相结合的第三次考试，目前正在进行网上报名（8月23日-31日），现场确认时间为9月11日-13日。为了使广大考生更好地理解新学考和高考选考的有关内容，浙江省教育考试院对《新学考、选考问题解答》的内容进行了调整充实。下面，快来看看具体内容</p>
+			</div>
+			<div class="col-md-4 footer-grids sjz fadeInLeft animated" data-wow-delay=".2s">
+				<h4><a href="http://mp.weixin.qq.com/s?__biz=MzAxMDAwMzU1Nw==&mid=2651172132&idx=1&sn=f4a02d850134df300cc14c2bd9e445e8&mpshare=1&scene=1&srcid=0824hL3o7lgoDABCShEIlWSt#rd" target="_black">中小学老师必看！今后教师职称怎么评？</a></h4>
+				<p>今年6月，我省启动深化中小学教师职称制度改革，改变了过去“一把尺子量到底”的评价标准，建立统一的中小学教师职务制度。日前，浙江省人力社保厅、省教育厅出台《浙江省中小学教师职称评价指导标准（试行）》，明确中小学教师职称评价条件。</p>
+			</div>
+			<div class="col-md-4 footer-grids sjz fadeInLeft animated" data-wow-delay=".2s">
+				<h4><a href="http://mp.weixin.qq.com/s?__biz=MzA5NDgzMDI5NQ==&mid=2657315475&idx=1&sn=aabfa3b4e304df630128f1c85fb1c1b3&mpshare=1&scene=1&srcid=0810fsh6bfqSdWR1Bsx52eG2#rd" target="_black">教育部改革政策：从幼升小到高考全面贯穿，家长要注意！</a></h4>
+				<p>教育政策每年都或大或小、或多或少地变化着，在这样一个重视应试教育的国度下，校内学习的方向又是怎样呢？今天跟大家全面解读教育部的最新政策，从幼升小到高考要全面改革啦，这关乎每一位孩子的命运哦，家长们要引起高度重视~</p>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!-- ／／最新资讯-->
+
+	<!-- 联系我们 -->
+	<div class="welcome contact" id="contact">
+		<div class="container">
+			<h3 class="title wow fadeInDown animated" data-wow-delay=".2s">联系我们</h3>
+			<div class="contact-row">
+				<div class="col-md-12 slideInRight animated s-top" data-wow-delay=".2s">
+					<h4>免费试听</h4>
+					<div class="address-left">
+						<p>一中校区、高中园校区：0573-83952805</p>
+						<p><img class="s-img" src="images/gzy/weichat-sls.jpg"></p>
+					</div>
+					<div class="address-right">
+						<p>余新分校：0573-83962806</p>
+						<p><img class="s-img" src="images/yx/weichat-a.jpg"></p>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+				<div class="col-md-12 slideInRight animated s-top" data-wow-delay=".2s">
+					<h4>应聘</h4>
+					<div class="address-left">
+						<p>应聘初高中各科教师：请将简历发送至教学总监钱老师邮箱chapinchain@pku.org.cn，或加微信</p>
+						<p><img class="s-img" src="images/q_w.jpg"></p>
+					</div>
+					<div class="address-right">
+						<p>应聘市场、行政管理职位：请加人事总监沈老师微信</p>
+						<p><img class="s-img" src="images/gzy/weichat-sls.jpg"></p>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!-- ／／联系我们 -->
+
+	<!-- footer -->
+	<dir class="s-footer">
+		<p>Copyright © 2016.7studying All rights reserved.</p>
+	</dir>
+	<!-- //footer -->
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
